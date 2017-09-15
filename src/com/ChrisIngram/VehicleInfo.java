@@ -3,22 +3,11 @@ package com.ChrisIngram;
 public class VehicleInfo {
 
   private int VIN;
-  private int odometer;
+  private double odometer;
   private double comsumption;
   private double lastOilChange;
   private double engineSizeInL;
 
-  public VehicleInfo(int VIN,
-                     int odometer,
-                     double comsumption,
-                     double lastOilChange,
-                     double engineSizeInL) {
-    this.VIN = VIN;
-    this.odometer = odometer;
-    this.comsumption = comsumption;
-    this.lastOilChange = lastOilChange;
-    this.engineSizeInL = engineSizeInL;
-  }
 
   public int getVIN() {
     return VIN;
@@ -28,7 +17,7 @@ public class VehicleInfo {
     this.VIN = VIN;
   }
 
-  public int getOdometer() {
+  public double getOdometer() {
     return odometer;
   }
 
