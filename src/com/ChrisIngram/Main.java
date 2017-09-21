@@ -5,14 +5,25 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        Scanner in = new Scanner(System.in);
-
-        // It's gonna do some input stuff.
-        // Make new Vehicleinfo object
-        // for each field use scanner to read in values, populate.
         VehicleInfo vh = new VehicleInfo();
-        vh.setVIN(12345);
+
+        Scanner inputScanner = new Scanner(System.in);
+
+        System.out.println("Please enter the VIN:");
+        vh.setVIN(Integer.parseInt(inputScanner.nextLine()));
+
+        System.out.println("Please enter the odometer:");
+        vh.setOdometer(Double.parseDouble(inputScanner.nextLine()));
+
+        System.out.println("Please enter the Gas used in gallons:");
+        vh.setConsumption(Double.parseDouble(inputScanner.nextLine()));
+
+        System.out.println("Please enter the odometer reading at the last Oil change:");
+        vh.setLastOilChange(Double.parseDouble(inputScanner.nextLine()));
+
+        System.out.println("Please enter the engine size in liters:");
+        vh.setEngineSizeInL(Double.parseDouble(inputScanner.nextLine()));
+
 
         TelematicsService.report(vh);
 

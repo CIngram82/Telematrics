@@ -4,7 +4,7 @@ public class VehicleInfo {
 
   private int VIN;
   private double odometer;
-  private double comsumption;
+  private double consumption;
   private double lastOilChange;
   private double engineSizeInL;
 
@@ -21,16 +21,16 @@ public class VehicleInfo {
     return odometer;
   }
 
-  public void setOdometer(int odometer) {
+  public void setOdometer(double odometer) {
     this.odometer = odometer;
   }
 
-  public double getComsumption() {
-    return comsumption;
+  public double getConsumption() {
+    return consumption;
   }
 
-  public void setComsumption(double comsumption) {
-    this.comsumption = comsumption;
+  public void setConsumption(double consumption) {
+    this.consumption = consumption;
   }
 
   public double getLastOilChange() {
